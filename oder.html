@@ -1,0 +1,635 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ثبت سفارش | NOVA Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container navigation">
+
+        <a href="index.html" class="logo">
+            NOVA
+        </a>
+
+        <nav>
+            <a href="index.html">خانه</a>
+            <a href="products.html">محصولات</a>
+            <a href="about.html">درباره ما</a>
+            <a href="contact.html">تماس با ما</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <a href="account.html">
+                👤 حساب کاربری
+            </a>
+
+            <a href="cart.html">
+                🛒 سبد خرید
+                <b id="cartCount">0</b>
+            </a>
+
+            <button id="menuBtn" class="menu-btn">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- عنوان -->
+
+<section class="page-title">
+
+    <div class="container">
+
+        <span class="section-label">
+            NOVA CHECKOUT
+        </span>
+
+        <h1>
+            ثبت سفارش
+        </h1>
+
+        <p>
+            اطلاعات خود را وارد کنید تا سفارش شما آماده شود.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ثبت سفارش -->
+
+<section class="checkout-section">
+
+    <div class="container checkout-layout">
+
+
+        <!-- ================= FORM ================= -->
+
+        <div class="checkout-form">
+
+
+            <!-- اطلاعات شخصی -->
+
+            <div class="form-card">
+
+                <div class="form-card-title">
+
+                    <span>01</span>
+
+                    <div>
+                        <h2>اطلاعات گیرنده</h2>
+
+                        <p>
+                            اطلاعات شخصی خود را وارد کنید.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label>
+                            نام
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="نام"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            نام خانوادگی
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="نام خانوادگی"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            کد ملی
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="مثلاً 0012345678"
+                            maxlength="10"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            شماره موبایل
+                        </label>
+
+                        <input
+                            type="tel"
+                            placeholder="09123456789"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>
+                            ایمیل
+                        </label>
+
+                        <input
+                            type="email"
+                            placeholder="example@email.com">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- آدرس -->
+
+            <div class="form-card">
+
+                <div class="form-card-title">
+
+                    <span>02</span>
+
+                    <div>
+
+                        <h2>
+                            آدرس ارسال
+                        </h2>
+
+
+<p>
+                            آدرس دقیق محل تحویل سفارش.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label>
+                            استان
+                        </label>
+
+                        <select required>
+
+                            <option value="">
+                                انتخاب استان
+                            </option>
+
+                            <option>
+                                تهران
+                            </option>
+
+                            <option>
+                                البرز
+                            </option>
+
+                            <option>
+                                اصفهان
+                            </option>
+
+                            <option>
+                                فارس
+                            </option>
+
+                            <option>
+                                خراسان رضوی
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            شهر
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="نام شهر"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>
+                            آدرس کامل
+                        </label>
+
+                        <textarea
+                            rows="4"
+                            placeholder="خیابان، کوچه، نام ساختمان و..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            پلاک
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="مثلاً ۲۴"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            واحد
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="مثلاً ۳">
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>
+                            کد پستی
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="کد پستی ۱۰ رقمی"
+                            maxlength="10"
+                            required>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- توضیحات -->
+
+            <div class="form-card">
+
+                <div class="form-card-title">
+
+                    <span>03</span>
+
+                    <div>
+
+                        <h2>
+                            توضیحات سفارش
+                        </h2>
+
+                        <p>
+                            اگر نکته‌ای درباره سفارش دارید بنویسید.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        توضیحات
+                    </label>
+
+                    <textarea
+                        rows="5"
+                        placeholder="مثلاً زمان مناسب برای تحویل یا توضیحات دیگر..."></textarea>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- پرداخت -->
+
+            <div class="form-card">
+
+                <div class="form-card-title">
+
+                    <span>04</span>
+
+                    <div>
+
+                        <h2>
+                            روش پرداخت
+                        </h2>
+
+
+<p>
+                            روش پرداخت مورد نظر خود را انتخاب کنید.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="payment-grid">
+
+
+                    <label class="payment-card">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            checked>
+
+                        <div>
+
+                            <strong>
+                                پرداخت آنلاین
+                            </strong>
+
+                            <small>
+                                پرداخت از طریق درگاه
+                            </small>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="payment-card">
+
+                        <input
+                            type="radio"
+                            name="payment">
+
+                        <div>
+
+                            <strong>
+                                پرداخت در محل
+                            </strong>
+
+                            <small>
+                                پرداخت هنگام تحویل
+                            </small>
+
+                        </div>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="final-order-btn"
+                onclick="submitOrder()">
+
+                ثبت نهایی سفارش
+
+                <span>
+                    ←
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- ================= SUMMARY ================= -->
+
+        <aside class="checkout-summary">
+
+            <div class="summary-card">
+
+                <div class="summary-header">
+
+                    <h2>
+                        خلاصه سفارش
+                    </h2>
+
+                    <span>
+                        NOVA
+                    </span>
+
+                </div>
+
+
+                <div id="orderItems">
+
+                    <div class="summary-empty">
+
+                        سبد خرید شما در اینجا نمایش داده می‌شود.
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-line">
+
+                    <span>
+                        تعداد کالا
+                    </span>
+
+                    <strong id="orderCount">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-total">
+
+                    <span>
+                        مبلغ نهایی
+                    </span>
+
+                    <strong id="orderTotal">
+                        ۰ تومان
+                    </strong>
+
+                </div>
+
+
+                <a
+                    href="cart.html"
+                    class="edit-cart">
+
+                    ← ویرایش سبد خرید
+
+                </a>
+
+            </div>
+
+
+            <div class="secure-box">
+
+                🔒
+
+                <div>
+
+                    <strong>
+                        خرید امن
+                    </strong>
+
+                    <p>
+                        اطلاعات شما فقط برای ثبت سفارش استفاده می‌شود.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>NOVA</h3>
+
+                <p>
+                    فروشگاه آنلاین لباس و استایل
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    دسترسی سریع
+                </h4>
+
+                <a href="index.html">خانه</a>
+                <a href="products.html">محصولات</a>
+                <a href="about.html">درباره ما</a>
+                <a href="contact.html">تماس با ما</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    حساب کاربری
+                </h4>
+
+                <a href="account.html">
+                    حساب کاربری
+                </a>
+
+
+<a href="cart.html">
+                    سبد خرید
+                </a>
+
+                <a href="order.html">
+                    ثبت سفارش
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 NOVA Store
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+function submitOrder() {
+
+    alert(
+        "سفارش شما با موفقیت ثبت شد."
+    );
+
+}
+
+</script>
+
+</body>
+
+</html>
